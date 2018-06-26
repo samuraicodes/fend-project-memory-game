@@ -30,7 +30,9 @@ const modal = document.querySelector(".modal");
 
 /* Game Code*/
 
-/* Shuffle Cards*/
+/* Shuffle Cards. This function initialize the game. Create a array from the card class
+list, call the shuffle function, loop on the listCards array and add a Event to the cards.
+If the target has a card class, call the openCard, moveCounter and startTime.*/
 
 function mixCards() {
   let listCards = shuffle(Array.from(selectCards));

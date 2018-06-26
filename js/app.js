@@ -28,13 +28,22 @@ const starTwo =  document.getElementById("starTwo");
 
 const modal = document.querySelector(".modal");
 
+/* Game Code*/
 
-/*
- * Display the cards on the page
- *   - shuffle the list of cards using the provided "shuffle" method below
- *   - loop through each card and create its HTML
- *   - add each card's HTML to the page
- */
+/* Shuffle Cards*/
+
+function mixCards() {
+  let listCards = shuffle(Array.from(selectCards));
+        for (const shuffleCard of listCards) {
+            deck.appendChild(shuffleCard);
+            shuffleCard.addEventListener("click", function (event) {
+                if (event.target.className === "card") {
+                    openCard();
+                    moveCounter();
+                    startTime();
+      }})}};
+
+mixCards();
 
 // Shuffle function from http://stackoverflow.com/a/2450976
 function shuffle(array) {

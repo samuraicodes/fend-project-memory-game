@@ -72,3 +72,23 @@ function openCard() {
      if (listOpened.length === 2){
            compareClass();
 }}
+
+function compareClass() {
+  if (listOpened[0].innerHTML ===
+      listOpened[1].innerHTML){
+    for (let match of listOpened){
+      match.className = "card match"
+    }
+    listOpened.length = 0;
+    if (document.getElementsByClassName("match").length === 16){
+    stopTime();
+    finishModal();
+    }
+  } else {
+    setTimeout(function(){
+      for (let cardClass of listOpened){
+        cardClass.className = "card"
+      }
+      listOpened.length = 0;
+    },0300);
+  }}

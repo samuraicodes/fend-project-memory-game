@@ -17,7 +17,10 @@ body {
 }
 
 body {
-    background: #ffffff url('../img/geometry2.png'); /* Background pattern from Subtle Patterns */
+    background: #ffffff url('../img/back4.jpg'); /* Background pattern from Pixabay */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
     font-family: 'Coda', cursive;
 }
 

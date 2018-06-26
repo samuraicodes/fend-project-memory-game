@@ -5,7 +5,7 @@
 * [Instructions](#instructions)
 * [Scores](#scores)
 * [Project](#contributing)
-* [Learn About Coude](#learn about code)
+* [Code](#code)
 * [Playlist](#playlist)
 
 ## Instructions
@@ -41,7 +41,7 @@ are you in the space.
 This project was make for the Front End Web Developer Nanodegree from Udacity
 and Google Developer Scholarship. For more info: https://www.udacity.com.
 
-## Learn about code
+## Code
 
 Links to learn about the code from this game:
 

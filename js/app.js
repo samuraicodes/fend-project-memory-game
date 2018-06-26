@@ -125,3 +125,23 @@ function compareClass() {
     function stopTime() {
         clearInterval(timekeeper);
     }
+
+    function finishModal() {
+      modal.innerHTML = "You have conquered the universe!" +
+                        "<br> Stars: " + "" + document.getElementsByClassName("stars").length +
+                        "<br> Time in the Space: " + "" + second
+                        + "<br> Moves: " + "" + moves
+                        + "<br> Another trip?"
+                        + "<br> Click here!";
+      document.querySelector("#gameTitle").style.fontSize = "500%"
+      timer.style.display = "none";
+      deck.style.display = "none";
+      moveElement.style.display = "none";
+      buttonRestart.style.display = "none";
+      stars.style.display = "none";
+      modal.style.display = "block";
+    }
+
+    modal.addEventListener('click', function () {
+          location.reload(true);
+    })

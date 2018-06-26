@@ -92,3 +92,14 @@ function compareClass() {
       listOpened.length = 0;
     },0300);
   }}
+
+  function moveCounter() {
+      if (listOpened.length === 2) {
+      moves++;
+      starsRemove();
+      if (moves === 1) {
+        moveElement.innerHTML = "1 Move";
+      }else{
+        moveElement.innerHTML = moves + " Moves";
+      }
+  }}

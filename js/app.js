@@ -62,9 +62,14 @@ function shuffle(array) {
     return array;
 }
 
+/* Listener event that reload the page*/
+
 buttonRestart.addEventListener('click', function () {
      location.reload(true);
 })
+
+
+/* Add Class Open to opened card*/
 
 function openCard() {
      event.target.className = "card open";
@@ -72,6 +77,10 @@ function openCard() {
      if (listOpened.length === 2){
            compareClass();
 }}
+
+/* Remove open class and add class match to mantaine opened the card, if the
+length from match list is equal to 16, call the stopTime and finishModal functions.
+If The cards are not equal, change the class name to card and close the card*/
 
 function compareClass() {
   if (listOpened[0].innerHTML ===
@@ -93,6 +102,11 @@ function compareClass() {
     },0300);
   }}
 
+
+  /* Add a move to the move counter, call the function that delete the stars. Change the html
+  if the moves are equal to 1*/
+
+
   function moveCounter() {
       if (listOpened.length === 2) {
       moves++;
@@ -104,6 +118,8 @@ function compareClass() {
       }
   }}
 
+/* Remove class and add color to the stars */
+
   function starsRemove() {
     if (moves === 10) {
                 starOne.style.color = "#370d42";
@@ -114,6 +130,9 @@ function compareClass() {
                 starTwo.className = ""
   }}
 
+/* If second is equal to zero and the length of listOpened is equal to one,
+then the function start the Timekeeper*/
+
   function startTime() {
     if (second === 0 && listOpened.length === 1){
       timekeeper = setInterval(function () {
@@ -122,9 +141,14 @@ function compareClass() {
       }, 1000);
     }}
 
+/* Stop the Timekeeper*/
+
     function stopTime() {
         clearInterval(timekeeper);
     }
+
+/* Function that display a Modal when the player finish the game. Shows a message
+with the stars, time & moves. Invites to play again with a Click here!. */
 
     function finishModal() {
       modal.innerHTML = "You have conquered the universe!" +
@@ -141,6 +165,8 @@ function compareClass() {
       stars.style.display = "none";
       modal.style.display = "block";
     }
+
+/* Event listener that close the Modal */
 
     modal.addEventListener('click', function () {
           location.reload(true);

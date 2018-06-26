@@ -68,18 +68,16 @@ h1 {
 
 .deck .card.open {
     transform: rotateY(0);
-    background: #02b3e4;
+    font-size: 280%;
+    background-color: #370d42;
     cursor: default;
-}
-
-.deck .card.show {
-    font-size: 33px;
+    color: #fff;
 }
 
 .deck .card.match {
     cursor: default;
-    background: #02ccba;
-    font-size: 33px;
+    font-size: 350%;
+
 }
 
 /*

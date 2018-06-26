@@ -103,3 +103,13 @@ function compareClass() {
         moveElement.innerHTML = moves + " Moves";
       }
   }}
+
+  function starsRemove() {
+    if (moves === 10) {
+                starOne.style.color = "#370d42";
+    }else if (moves === 15) {
+                starOne.className = ""
+                starTwo.style.color = "#370d42";
+    }else if (moves === 20) {
+                starTwo.className = ""
+  }}

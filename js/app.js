@@ -113,3 +113,15 @@ function compareClass() {
     }else if (moves === 20) {
                 starTwo.className = ""
   }}
+
+  function startTime() {
+    if (second === 0 && listOpened.length === 1){
+      timekeeper = setInterval(function () {
+        timer.innerHTML = second + " sec in the Space";
+          second++;
+      }, 1000);
+    }}
+
+    function stopTime() {
+        clearInterval(timekeeper);
+    }

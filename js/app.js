@@ -1,6 +1,32 @@
-/*
- * Create a list that holds all of your cards
- */
+/* Deck Variable*/
+const deck = document.querySelector(".deck");
+
+/*Cards Variables*/
+
+const selectCards = document.getElementsByClassName("card");
+let listOpened = [];
+
+/* Restart Variable */
+const buttonRestart = document.querySelector(".restart");
+
+/*Timekeeper Variables*/
+
+let timekeeper;
+let second = 0;
+const timer = document.querySelector(".timer");
+
+/* Moves Variables*/
+let moves = 0;
+let moveElement = document.querySelector(".moves");
+
+/* Stars Variables*/
+const stars = document.querySelector(".stars");
+const starOne =  document.getElementById("starOne");
+const starTwo =  document.getElementById("starTwo");
+
+/* Modal Variable */
+
+const modal = document.querySelector(".modal");
 
 
 /*

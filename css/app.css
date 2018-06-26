@@ -77,7 +77,6 @@ h1 {
 .deck .card.match {
     cursor: default;
     font-size: 350%;
-
 }
 
 /*
@@ -86,8 +85,8 @@ h1 {
 
 .score-panel {
     text-align: left;
-    width: 345px;
-    margin-bottom: 10px;
+    width: 30%;
+    color: #fff
 }
 
 .score-panel .stars {
@@ -105,4 +104,6 @@ h1 {
 .score-panel .restart {
     float: right;
     cursor: pointer;
+    padding-right: 5%;
+    padding-left: 3%;
 }

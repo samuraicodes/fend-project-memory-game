@@ -5,6 +5,8 @@
 * [Instructions](#instructions)
 * [Scores](#scores)
 * [Project](#contributing)
+* [Learn About Coude](#learn About Code)
+* [Playlist](#playlist)
 
 ## Instructions
 

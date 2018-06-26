@@ -157,7 +157,7 @@ with the stars, time & moves. Invites to play again with a Click here!. */
                         + "<br> Moves: " + "" + moves
                         + "<br> Another trip?"
                         + "<br> Click here!";
-      document.querySelector("#gameTitle").style.fontSize = "500%"
+      document.querySelector("#gameTitle").style.fontSize = "500%";
       timer.style.display = "none";
       deck.style.display = "none";
       moveElement.style.display = "none";

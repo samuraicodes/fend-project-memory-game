@@ -81,7 +81,7 @@ https://developer.mozilla.org/en-US/docs/Web/API/Element/innerHTML
 
 # Playlist:
 
-I work in this project listen:
+In this project I worked listening:
 
 Anarch Enemy: https://www.youtube.com/watch?v=0gaVyhMevks
 Faun: https://www.youtube.com/watch?v=zOvsyamoEDg

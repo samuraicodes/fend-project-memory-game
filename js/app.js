@@ -65,3 +65,10 @@ function shuffle(array) {
 buttonRestart.addEventListener('click', function () {
      location.reload(true);
 })
+
+function openCard() {
+     event.target.className = "card open";
+     listOpened.push(event.target);
+     if (listOpened.length === 2){
+           compareClass();
+}}

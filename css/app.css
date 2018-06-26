@@ -107,3 +107,29 @@ h1 {
     padding-right: 5%;
     padding-left: 3%;
 }
+
+
+.timer {
+  float: right;
+  padding-right: 10%;
+}
+
+/*
+Modal Style
+*/
+
+.modal {
+  position: fixed;
+  width: 50%;
+  height: 50%;
+  top: 30%;
+  left: 25%;
+  padding-top: 1%;
+  font-size: 200%;
+  text-align: center;
+  border: #fff 5px solid;
+  background-color: #370d42;
+  color: #fff;
+  display:none;
+  cursor: pointer;
+}
